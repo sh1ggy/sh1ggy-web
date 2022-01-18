@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { MatrixRain } from '../components/matrix'
 
 const Home: NextPage = () => {
   return (
@@ -12,17 +13,33 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <MatrixRain />
+      <nav style={{padding:'50px'}}>
+        <ul>
+          <li>shiggy-dev</li>
+        </ul>
+        <ul>
+          <li>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/tools">
+              <a>Tools</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
       <body>
         <main>
-          
-          <h1>
-            Welcome to sh1ggy Web
-          </h1>
-          <p>
-            Tyrone Nolasco's {' '}
-            <code>code_portfolio.tsx</code>
+          <hgroup>
+            <h1>Welcome to {' '} <code>sh1ggy-web</code></h1>
+            <h3>Tyrone Nolasco's code portfolio</h3>
+          </hgroup>
+          <p>This is a general overview on the key parts of my personal programming journey as well 
+          as a fun way to play around with website development and show off a bit of my personality.
           </p>
-
         </main>
         <footer>
           <small><a href="https://github.com/sh1ggy">sh1ggy</a> • <a href="https://github.com/sh1ggy/sh1ggy-web">Source Code</a></small>

@@ -7,6 +7,14 @@
   padding-top: 1rem !important;
 }
 
+.pdfCode {
+  transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.pdfCode:hover {
+  transform: scale(1.2); 
+}
+
 .main {
   z-index: 1;
   min-height: 100vh;

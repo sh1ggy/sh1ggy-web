@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           for miscellaneous functionality.
         </p>
         
-        <code><a className={styles.pdfLink} onClick={() => window.open('/resume.pdf')}>resume.pdf</a></code>
+        <code className={styles.pdfCode}><a className={styles.pdfLink} onClick={() => window.open('/resume.pdf')}>resume.pdf</a></code>
       </main>
     </>
   )

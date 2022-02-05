@@ -22,9 +22,12 @@ export async function getStaticProps(context) { // run for specific route
     smartypants: false
   })
 
+  // custom renderer for image figures with captions
   const renderer = {
     image(href, title, text) {
-      if (text == '') return `<img class="mkdown-image" src="${href}" title="${text}">`
+      // handling without captions
+      if (text == '') return `<img class="mkdown-image" src="${href}" title="${text}">` // using mkdown-image from override
+      // images with captions
       return `
             <figure>
               <img class="mkdown-image" src="${href}" title="${title}">

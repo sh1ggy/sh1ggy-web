@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { MatrixRain } from '../components/matrix'
 import { Footer, NavBar } from '../components/blocks'
@@ -15,19 +14,15 @@ const Home: NextPage = () => {
       </Head>
 
       <MatrixRain />
-      <NavBar/>
-      <body>
-        <main>
-          <hgroup>
-            <h1>Welcome to {' '} <code>sh1ggy-web</code></h1>
-            <h3>Tyrone Nolasco's code portfolio</h3>
-          </hgroup>
-          <p>This is a general overview on the key parts of my personal programming journey as well 
+      <main>
+        <hgroup>
+          <h1>Welcome to {' '} <code>sh1ggy-web</code></h1>
+          <h3>Tyrone Nolasco's code portfolio</h3>
+        </hgroup>
+        <p>This is a general overview on the key parts of my personal programming journey as well
           as a fun way to play around with website development and show off a bit of my personality.
-          </p>
-        </main>
-        <Footer/>
-      </body>
+        </p>
+      </main>
     </>
   )
 }

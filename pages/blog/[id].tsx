@@ -1,65 +1,56 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { marked } from 'marked';
+import { readFile, readdir } from 'fs/promises'
+import path from 'path'
+import matter from 'gray-matter'
 
-
-const MDParse = () => {
-    marked.setOptions({
-        renderer: new marked.Renderer(),
-        gfm: true,
-        tables: true,
-        breaks: false,
-        pedantic: false,
-        sanitize: true,
-        smartLists: true,
-        smartypants: false
-    })
-    const getMD = () => {
-        let string = '# Welcome to my React Markdown Previewer!'
-        let post = marked(string, {sanitize: true})
-        return {__html: post}
-    }
-    
-    
-    return (
-        <div dangerouslySetInnerHTML={getMD()}></div>
-    )
+export async function getStaticProps(context) { // run for specific route
+  const postDirectory = 'posts'
+  // read the specific file from the context
+  const postContent = await (await readFile(`posts/${context.params.id}.md`)).toString();
+  const metaContent = matter(postContent, {delimiters: ['<!--', '-->']}); // parsing the metadata from file contents
+  
+  // parsing
+  marked.setOptions({
+    renderer: new marked.Renderer(),
+    gfm: true,
+    tables: true,
+    breaks: false,
+    pedantic: false,
+    smartLists: true,
+    smartypants: false
+  })
+  let postParsed = marked(metaContent.content) // markedJS parsed content
+  let postMetaData = metaContent.data // gray matter metadata
+  return { props: { postParsed, postMetaData}, } // gets sent to client side as prop
 }
 
-export default function Post() {
-    const router = useRouter() 
-    const { id } = router.query
+export async function getStaticPaths() { // specifying routes based on pages
+  // read directory for file names and assign it to paths
+  const posts = await readdir('posts');
+  const paths = posts.map((post) => {
+    const parsedPost = path.parse(post).name; // removes the file ext
+    return { params: { id: parsedPost } }
+  })
 
-    return (
-        <>
-          <nav style={{ padding: '50px' }}>
-            <Link href="/">
-              <li>shiggy-dev</li>
-            </Link>
-            <ul>
-              <li>
-                <Link href="/blog">
-                  <a>Blog</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/tools">
-                  <a>Tools</a>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          <body>
-            <main>
-                <h1>{' '} <code>{id} post</code></h1>
-                
-                <MDParse/>
-            </main>
-            <footer>
-              <small><a href="https://github.com/sh1ggy">sh1ggy</a> • <a href="https://github.com/sh1ggy/sh1ggy-web">Source Code</a></small>
-            </footer>
-          </body>
-        </>
-      )
-    
+  // ----golfed version
+  // const posts = (await readdir('posts'))
+  // .map((post) => basename(post))
+  // .map((postName) => ({ id: postName }));
+  
+  return { paths, fallback: false }
+}
+
+export default function Post({ postParsed, postMetaData }) {
+  const router = useRouter()
+  const title = postMetaData.title
+  return (
+    <>
+      <main>
+        <h1>{' '} <code>{title}</code></h1>
+        <div dangerouslySetInnerHTML={{ __html: postParsed }} />
+      </main>
+    </>
+  )
+
 }

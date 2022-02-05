@@ -1,7 +1,7 @@
 <!--  
 title: TEST
 description: This is a test.
-path: test
+slug: test
 -->
 
 # h1 Heading 8-)

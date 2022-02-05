@@ -3,17 +3,17 @@ import Link from 'next/link'
 export const NavBar = () => {
     return (
         <nav style={{ padding: '50px' }}>
-            <Link href="/">
+            <Link passHref={true} href="/">
                 <li>shiggy-dev</li>
             </Link>
             <ul>
                 <li>
-                    <Link href="../blog">
+                    <Link passHref={true} href="../blog">
                         <a>Blog</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="../tools">
+                    <Link passHref={true} href="../tools">
                         <a>Tools</a>
                     </Link>
                 </li>

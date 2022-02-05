@@ -1,7 +1,7 @@
 <!--  
 title: hello WORLD
 description: nice
-path: helloworld
+slug: helloworld
 -->
 
 ## Hello World

@@ -7,7 +7,6 @@ import { getFileNames, getMetaData } from '../../lib/helper';
 export async function getStaticProps() { // specifying routes based on pages
   const paths = await getFileNames();
   const metaData = await getMetaData();
-  
 
   return { props: { paths, metaData}, }
 }
@@ -21,14 +20,26 @@ export default function Blog({ paths, metaData }) {
       <main>
         <h1>Welcome to {' '} <code>sh1ggy-web blog</code></h1>
         <h2>Blog List</h2>
-        {metaData.map((data) => (
-          <Link href={`blog/${data.path}`}>
-            <li>
-              <strong>{data.title}: </strong>
-              <p>{data.description}</p>
-            </li>
-          </Link>
-        ))}
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {metaData.map((data: any) => (
+              <>
+                <Link passHref={true} href={`blog/${data.slug}`}>
+                  <tr>
+                    <td>{data.title}</td>
+                    <td>{data.description}</td>
+                  </tr>
+                </Link>
+              </>
+            ))}
+          </tbody>
+        </table>
       </main>
     </>
   )

@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import { Footer, NavBar } from '../../components/blocks'
 
 const Tools: NextPage = () => {
   return (

@@ -42,7 +42,6 @@ export async function getStaticPaths() { // specifying routes based on pages
 }
 
 export default function Post({ postParsed, postMetaData }) {
-  const router = useRouter()
   const title = postMetaData.title
   return (
     <>

@@ -1,7 +1,7 @@
 <!--
 title: 2019 - Mobile App Development Hackathon
 description: First hackathon & app development experience
-path: 2019Hackathon
+slug: 2019Hackathon
 -->
 
 [GitHub Repository](https://github.com/sh1ggy/hackathon19-TDRJKM-android).

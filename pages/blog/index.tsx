@@ -25,7 +25,7 @@ export default function Blog({ paths, metaData }) {
           <Link href={`blog/${data.path}`}>
             <li>
               <strong>{data.title}: </strong>
-              <>{data.description}</>
+              <p>{data.description}</p>
             </li>
           </Link>
         ))}

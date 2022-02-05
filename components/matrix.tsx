@@ -59,17 +59,6 @@ export const MatrixRain = () => {
     };
     
     return ( // Return the canvas, keeping in mind the ref you created to it
-        <canvas 
-            style={{
-                top: '0',
-                left: '0',
-                width:'100vw', 
-                position:'absolute', 
-                height:'100vh', 
-                opacity:0.2, 
-                zIndex:-1, 
-                filter: 'blur(2px)'}} 
-            ref={canvas}> 
-        </canvas>
+        <canvas ref={canvas}/> 
     )
 }

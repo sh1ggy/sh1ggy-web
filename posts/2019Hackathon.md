@@ -3,9 +3,9 @@ title: 2019 - Mobile App Development Hackathon
 description: First hackathon & app development experience
 slug: 2019Hackathon
 -->
+<u>[GitHub Repository](https://github.com/sh1ggy/hackathon19-TDRJKM-android)</u>
 
-[GitHub Repository](https://github.com/sh1ggy/hackathon19-TDRJKM-android).
-
+--- 
 This was the first hackathon that I personally participated in and this blog post will serve to be a reflection of what I took away from the event in terms of teamwork and programming skills. 
 
 The goal of this hackathon was to choose a start-up that our team, TDRJKM, was most interested in and bring their vision to life in the form of an app and overall presentation of its functionality within 3 days. We chose a start-up called Casual Earnings that wanted to create a self-managed work rostering mobile platform with features including a social network of other contract workers, hourly pay calculator and a shift calendar. 

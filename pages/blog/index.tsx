@@ -18,28 +18,30 @@ export default function Blog({ paths, metaData }) {
     <>
       <MatrixRain />
       <main>
-        <h1>Welcome to {' '} <code>sh1ggy-web blog</code></h1>
-        <h2>Blog List</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {metaData.map((data: any) => (
-              <>
-                <Link passHref={true} href={`blog/${data.slug}`}>
-                  <tr>
-                    <td>{data.title}</td>
-                    <td>{data.description}</td>
-                  </tr>
-                </Link>
-              </>
-            ))}
-          </tbody>
-        </table>
+        <h1><code>sh1ggy-web blog</code></h1>
+        <article>
+          <header><strong style={{fontSize: '30px'}}>Blog List</strong></header>
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {metaData.map((data: any) => (
+                <>
+                  <Link passHref={true} href={`blog/${data.slug}`}>
+                    <tr>
+                      <td>{data.title}</td>
+                      <td>{data.description}</td>
+                    </tr>
+                  </Link>
+                </>
+              ))}
+            </tbody>
+          </table>
+        </article>
       </main>
     </>
   )

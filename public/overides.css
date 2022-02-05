@@ -1,3 +1,6 @@
-main a {
-    color: #1095C1 !important;    
+a code {
+    text-decoration: underline;
+    color: #1095C1 !important;   
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
 }

@@ -6,10 +6,13 @@ year: 2020
 slug: HackQ
 -->
 
-<u>[GitHub Repository](https://github.com/sh1ggy/COVIDToolkit)</u> \
-<u>[Info Page](https://devpost.com/software/covidtoolkit)</u> \
-<u>[Hack Quarantine](https://hackquarantine.devpost.com/?ref_feature=challenge&ref_medium=discover)</u> 
+[`GitHub Repository`](https://github.com/sh1ggy/COVIDToolkit) \
+[`Info Page`](https://devpost.com/software/covidtoolkit) \
+[`Hack Quarantine`](https://hackquarantine.devpost.com/?ref_feature=challenge&ref_medium=discover)
 
+--- 
+
+\
 The Hack Quarantine was focussed on creating something that would help combat issues the quarantine had caused the world. We decided to make a COVID Toolkit including a country statistics, hand-washing timer and FAQ section.   
 
 This second hackathon acted as more of a reaffirmation of the things that I learnt in the first hackathon as well as something to do during the quarantine period. The end product was more refined than the first hackathon as the format was much simpler since everyone in my team of three had a role to play. 
@@ -23,6 +26,6 @@ This experience led me to pursue mobile app development more, picking it as my m
 
 ## Appendix
 ### Screenshots of Application Features
-![Hand Washing Timer](/blog/hackq/timer.png)
-![FAQ Section](/blog/hackq/faq.png)
-![COVID Statistics](/blog/hackq/api.png)
+![](/blog/hackq/timer.png)
+![](/blog/hackq/faq.png)
+![](/blog/hackq/api.png)

@@ -40,9 +40,9 @@ export default function Blog({ metaData }) {
                       <td>{data.title}</td>
                       <td>{data.description}</td>
                       <td>
-                        {data.tags.trim().split(",").map((tag: any) => (
-                          // let tags = metaData.tags.trim().split(",")
-                          <kbd className={styles.kbd}>{tag}</kbd>
+                        {/* splitting by ","  */}
+                        {data.tags.trim().split(",").map((tag: any) => ( 
+                          <kbd key={data.title + data.tags} className={styles.kbd}>{tag}</kbd>
                         ))}
                       </td>
                     </tr>

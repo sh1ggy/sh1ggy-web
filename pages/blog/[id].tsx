@@ -9,8 +9,8 @@ export async function getStaticProps(context) { // run for specific route
   const postDirectory = 'posts'
   // read the specific file from the context
   const postContent = await (await readFile(`${postDirectory}/${context.params.id}.md`)).toString();
-  const metaContent = matter(postContent, {delimiters: ['<!--', '-->']}); // parsing the metadata from file contents
-  
+  const metaContent = matter(postContent, { delimiters: ['<!--', '-->'] }); // parsing the metadata from file contents
+
   // parsing
   marked.setOptions({
     renderer: new marked.Renderer(),
@@ -21,9 +21,24 @@ export async function getStaticProps(context) { // run for specific route
     smartLists: true,
     smartypants: false
   })
+
+  const renderer = {
+    image(href, title, text) {
+      if (text == '') return `<img src="${href}" title="${text}">`
+      return `
+            <figure>
+              <img src="${href}" title="${title}">
+              <figcaption>${text}</figcaption>
+            </figure>
+              `;
+    }
+  };
+
+  marked.use({ renderer })
+
   let postParsed = marked(metaContent.content) // markedJS parsed content
   let postMetaData = metaContent.data // gray matter metadata
-  return { props: { postParsed, postMetaData}, } // gets sent to client side as prop
+  return { props: { postParsed, postMetaData }, } // gets sent to client side as prop
 }
 
 export async function getStaticPaths() { // specifying routes based on pages
@@ -38,7 +53,7 @@ export async function getStaticPaths() { // specifying routes based on pages
   // const posts = (await readdir('posts'))
   // .map((post) => basename(post))
   // .map((postName) => ({ id: postName }));
-  
+
   return { paths, fallback: false }
 }
 
@@ -48,9 +63,9 @@ export default function Post({ postParsed, postMetaData }) {
     <>
       <Head>
         <title>shiggy-dev blog</title>
-        <meta name="description" content={title}/>
+        <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href='/overides.css'/>
+        <link rel="stylesheet" href='/overides.css' />
       </Head>
 
       <main>

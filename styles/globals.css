@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 canvas {
@@ -29,4 +29,19 @@ canvas {
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #73828C; 
 }

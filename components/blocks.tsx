@@ -25,7 +25,7 @@ export const NavBar = () => {
 export const Footer = () => {
     return (
         <footer>
-            <small><a href="https://github.com/sh1ggy">sh1ggy</a> • <a href="https://github.com/sh1ggy/sh1ggy-web">Source Code</a> • {new Date().getFullYear()}</small>
+            <small><a href="https://github.com/sh1ggy">GitHub</a> • <a href="https://www.linkedin.com/in/tyrone-nolasco-57113617b/">LinkedIn</a> • <a href="https://github.com/sh1ggy/sh1ggy-web">Source Code</a> • {new Date().getFullYear()}</small> 
         </footer>
     )
 }

@@ -5,9 +5,10 @@ tags: Android Studio, Adobe XD
 year: 2019
 slug: HackMADS
 -->
-<u>[GitHub Repository](https://github.com/sh1ggy/hackathon19-TDRJKM-android)</u>
+[`GitHub Repository`](https://github.com/sh1ggy/hackathon19-TDRJKM-android)
 
---- 
+---
+
 This was the first hackathon that I personally participated in and this blog post will serve to be a reflection of what I took away from the event in terms of teamwork and programming skills. 
 
 The goal of this hackathon was to choose a start-up that our team, TDRJKM, was most interested in and bring their vision to life in the form of an app and overall presentation of its functionality within 3 days. We chose a start-up called Casual Earnings that wanted to create a self-managed work rostering mobile platform with features including a social network of other contract workers, hourly pay calculator and a shift calendar. 
@@ -20,6 +21,10 @@ I entered with a team of friends, only one of which had any programming backgrou
 	 - *Development* - Android Studio (& XCode) 
 
 Low fidelity designs were quickly produced so that development could begin. The design team then moved on to high fidelity designs to be exported and used in Android Studio.
+
+### Mock-ups
+
+![These were the final mock-ups our team created](/blog/mads/mockups.png)
 
 The development process was very slow because of my inexperience with both Github collaboration and mobile app development using Android Studio. My main tasks were the organisation of the designed elements in Android Studio and a timer feature present within the app to clock into a shift for example. 
 

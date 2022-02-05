@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>sh1ggy</title>
-        <meta name="description" content="NextJS powered website" />
+        <meta name="description" content="Tyrone Nolasco's personal NextJS powered website"/>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"/>
       </Head>

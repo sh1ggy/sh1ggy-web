@@ -24,10 +24,10 @@ export async function getStaticProps(context) { // run for specific route
 
   const renderer = {
     image(href, title, text) {
-      if (text == '') return `<img src="${href}" title="${text}">`
+      if (text == '') return `<img class="mkdown-image" src="${href}" title="${text}">`
       return `
             <figure>
-              <img src="${href}" title="${title}">
+              <img class="mkdown-image" src="${href}" title="${title}">
               <figcaption>${text}</figcaption>
             </figure>
               `;

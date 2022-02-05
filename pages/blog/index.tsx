@@ -1,21 +1,22 @@
-import type { NextPage } from 'next'
 import Link from 'next/link'
-import { Footer, NavBar } from '../../components/blocks';
+import Head from 'next/head'
 import { MatrixRain } from '../../components/matrix';
-import { getFileNames, getMetaData } from '../../lib/helper';
+import { getMetaData, MetaData } from '../../lib/helper';
+import styles from '../../styles/Blog.module.css'
 
 export async function getStaticProps() { // specifying routes based on pages
-  const paths = await getFileNames();
   const metaData = await getMetaData();
 
-  return { props: { paths, metaData}, }
+  return { props: { metaData}, }
 }
 
-export default function Blog({ paths, metaData }) {
-  // let title = metaData.title
-  
+export default function Blog({ metaData }) {
   return (
     <>
+      <Head>
+        <title>shiggy-dev</title>
+        <meta name="description" content="Tyrone Nolasco's personal NextJS powered website"/>
+      </Head>
       <MatrixRain />
       <main>
         <h1><code>sh1ggy-web blog</code></h1>
@@ -24,17 +25,26 @@ export default function Blog({ paths, metaData }) {
           <table>
             <thead>
               <tr>
-                <th>Title</th>
-                <th>Description</th>
+                <th><strong>Year</strong></th>
+                <th><strong>Title</strong></th>
+                <th><strong>Description</strong></th>
+                <th><strong>Tags</strong></th>
               </tr>
             </thead>
             <tbody>
-              {metaData.map((data: any) => (
+              {metaData.map((data: MetaData) => (
                 <>
                   <Link passHref={true} href={`blog/${data.slug}`}>
                     <tr>
+                      <td>{data.year}</td>
                       <td>{data.title}</td>
                       <td>{data.description}</td>
+                      <td>
+                        {data.tags.trim().split(",").map((tag: any) => (
+                          // let tags = metaData.tags.trim().split(",")
+                          <kbd className={styles.kbd}>{tag}</kbd>
+                        ))}
+                      </td>
                     </tr>
                   </Link>
                 </>

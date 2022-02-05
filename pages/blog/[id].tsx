@@ -1,13 +1,14 @@
-import { useRouter } from 'next/router'
-import { marked } from 'marked';
 import { readFile, readdir } from 'fs/promises'
 import path from 'path'
+import Head from 'next/head'
+import { marked } from 'marked';
 import matter from 'gray-matter'
+import styles from '../../styles/Blog.module.css'
 
 export async function getStaticProps(context) { // run for specific route
   const postDirectory = 'posts'
   // read the specific file from the context
-  const postContent = await (await readFile(`posts/${context.params.id}.md`)).toString();
+  const postContent = await (await readFile(`${postDirectory}/${context.params.id}.md`)).toString();
   const metaContent = matter(postContent, {delimiters: ['<!--', '-->']}); // parsing the metadata from file contents
   
   // parsing
@@ -45,6 +46,13 @@ export default function Post({ postParsed, postMetaData }) {
   const title = postMetaData.title
   return (
     <>
+      <Head>
+        <title>shiggy-dev blog</title>
+        <meta name="description" content={title}/>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href='/overides.css'/>
+      </Head>
+
       <main>
         <h1>{' '} <code>{title}</code></h1>
         <div dangerouslySetInnerHTML={{ __html: postParsed }} />

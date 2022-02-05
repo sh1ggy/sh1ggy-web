@@ -1,7 +1,9 @@
 <!--
-title: 2019 - Mobile App Development Hackathon
+title: Mobile App Development for Start-Ups Hackathon
 description: First hackathon & app development experience
-slug: 2019Hackathon
+tags: Android Studio, Adobe XD
+year: 2019
+slug: HackMADS
 -->
 <u>[GitHub Repository](https://github.com/sh1ggy/hackathon19-TDRJKM-android)</u>
 

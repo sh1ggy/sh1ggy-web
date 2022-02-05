@@ -1,6 +1,8 @@
 <!--  
 title: TEST
 description: This is a test.
+tags: x, x, x
+year: 2022
 slug: test
 -->
 

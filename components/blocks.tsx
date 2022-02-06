@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export const NavBar = () => {
     return (
-        <nav style={{ padding: '50px' }}>
+        <nav>
             <Link passHref={true} href="/">
-                <li>shiggy-dev</li>
+                <li><a>shiggy-dev</a></li>
             </Link>
             <ul>
                 <li>

@@ -5,7 +5,7 @@ export interface MetaData {
   title: string,
   description: string,
   tags: string, 
-  year: number, 
+  date: string, 
   slug: string,
 }
 

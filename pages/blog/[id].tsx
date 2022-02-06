@@ -32,13 +32,12 @@ export async function getStaticProps(context) { // run for specific route
             <figure>
               <img class="mkdown-image" src="${href}" title="${title}">
               <figcaption>${text}</figcaption>
-            </figure>
-              `;
+            </figure>`;
     }
   };
-
   marked.use({ renderer })
-
+  
+  // parsing markdown content and metadata to props
   let postParsed = marked(metaContent.content) // markedJS parsed content
   let postMetaData = metaContent.data // gray matter metadata
   return { props: { postParsed, postMetaData }, } // gets sent to client side as prop
@@ -65,7 +64,7 @@ export default function Post({ postParsed, postMetaData }) {
   return (
     <>
       <Head>
-        <title>shiggy-dev blog</title>
+        <title>sh1ggy-dev blog</title>
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href='/overides.css' />

@@ -14,18 +14,18 @@ export default function Blog({ metaData }) {
   return (
     <>
       <Head>
-        <title>shiggy-dev</title>
-        <meta name="description" content="Tyrone Nolasco's personal NextJS powered website"/>
+        <title>sh1ggy-blog</title>
+        <meta name="description" content="Tyrone Nolasco's personal programming-focussed blog"/>
       </Head>
       <MatrixRain />
       <main>
         <h1><code>sh1ggy-web blog</code></h1>
         <article>
           <header><strong style={{fontSize: '30px'}}>Blog List</strong></header>
-          <table>
+          <table className={styles.blogList}>
             <thead>
               <tr>
-                <th><strong>Year</strong></th>
+                <th><strong>Date</strong></th>
                 <th><strong>Title</strong></th>
                 <th><strong>Description</strong></th>
                 <th><strong>Tags</strong></th>
@@ -35,14 +35,14 @@ export default function Blog({ metaData }) {
               {metaData.map((data: MetaData) => (
                 <>
                   <Link passHref={true} href={`blog/${data.slug}`}>
-                    <tr className={styles.tr}>
-                      <td>{data.year}</td>
+                    <tr className={styles.blogRow}>
+                      <td><i>{data.date}</i></td>
                       <td>{data.title}</td>
                       <td>{data.description}</td>
                       <td>
                         {/* splitting by ","  */}
                         {data.tags.trim().split(",").map((tag: any) => ( 
-                          <kbd key={data.title + data.tags} className={styles.kbd}>{tag}</kbd>
+                          <kbd key={data.title + data.tags} className={styles.tags}>{tag}</kbd>
                         ))}
                       </td>
                     </tr>

@@ -1,10 +1,14 @@
-import type { NextPage } from 'next'
+import Head from 'next/head'
 import { MatrixRain } from '../components/matrix'
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage = () => {
+export default function Home () {
   return (
     <>
+      <Head>
+        <title>sh1ggy-dev</title>
+        <meta name="description" content="Tyrone Nolasco's personal NextJS powered website" />
+      </Head>
       <MatrixRain />
       <main>
         <hgroup>
@@ -17,11 +21,9 @@ const Home: NextPage = () => {
         <p>This website will include a blog detailing my programming experiences as well as a toolbox
           for miscellaneous functionality.
         </p>
-        
+
         <code className={styles.pdfCode}><a className={styles.pdfLink} onClick={() => window.open('/resume.pdf')}>resume.pdf</a></code>
       </main>
     </>
   )
 }
-
-export default Home

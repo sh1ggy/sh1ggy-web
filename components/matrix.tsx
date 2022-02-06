@@ -16,11 +16,11 @@ export const MatrixRain = () => {
     // useEffect because this is going to be re-rendered
     useEffect(() => {
         const context = canvas.current.getContext('2d');
-        context.fillRect(0, 0, canvas.current.width, canvas.current.height);
         canvas.current.width = window.innerWidth;
         canvas.current.height = window.innerHeight;
+        context.fillRect(0, 0, canvas.current.width, canvas.current.height);
         const columns = canvas.current.width / fontSize;
-
+        
         const rainDropsTemp = [];
         for (let x = 0; x < columns; x++) {
             rainDropsTemp[x] = 1; // Initialisation

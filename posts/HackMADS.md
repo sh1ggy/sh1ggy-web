@@ -2,9 +2,12 @@
 title: Mobile App Development for Start-Ups Hackathon
 description: First hackathon & app development experience
 tags: Android Studio, Adobe XD
-year: 2019
+date: NOV 2019
 slug: HackMADS
 -->
+
+`17-11-2020`
+
 [`GitHub Repository`](https://github.com/sh1ggy/hackathon19-TDRJKM-android)
 
 ---
@@ -15,14 +18,14 @@ The goal of this hackathon was to choose a start-up that our team, TDRJKM, was m
 
 I entered with a team of friends, only one of which had any programming background so there was a lot of uncertainty with the roles that everyone was going to take on. There was another person that joined our team after the fact because of vested interest in the start-up that we chose. 
 
-## Skills Learned	
+## Skills Learned
  - **Rapid App Design & Development**: 
 	 - *Design* - Adobe XD
 	 - *Development* - Android Studio (& XCode) 
 
 Low fidelity designs were quickly produced so that development could begin. The design team then moved on to high fidelity designs to be exported and used in Android Studio.
 
-### Mock-ups
+### Adobe XD Mock-Ups
 
 ![These were the final mock-ups our team created](/blog/mads/mockups.png)
 

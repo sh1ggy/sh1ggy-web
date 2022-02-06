@@ -2,8 +2,8 @@
 title: TEST
 description: This is a test.
 tags: x, x, x
-year: 2022
-slug: test
+date: JAN 2022
+slug: ztest
 -->
 
 # h1 Heading 8-)

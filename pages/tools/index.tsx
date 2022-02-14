@@ -4,7 +4,7 @@ const Tools: NextPage = () => {
   return (
     <>
       <main>
-        <h1>Welcome to {' '} <code>sh1ggy-web tools</code></h1>
+        <h1><code>sh1ggy-web tools</code></h1>
       </main>
     </>
   )

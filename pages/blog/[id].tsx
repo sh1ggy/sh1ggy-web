@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { marked } from 'marked';
 import matter from 'gray-matter'
 import styles from '../../styles/Blog.module.css'
+import { url } from 'inspector';
 
 export async function getStaticProps(context) { // run for specific route
   const postDirectory = 'posts'
@@ -61,6 +62,7 @@ export async function getStaticPaths() { // specifying routes based on pages
 
 export default function Post({ postParsed, postMetaData }) {
   const title = postMetaData.title
+  
   return (
     <>
       <Head>
@@ -71,8 +73,12 @@ export default function Post({ postParsed, postMetaData }) {
       </Head>
 
       <main>
-        <h1>{' '} <code>{title}</code></h1>
-        <div dangerouslySetInnerHTML={{ __html: postParsed }} />
+        <div className={styles.postBackground} style={{backgroundImage: `url(/blog/${postMetaData.slug}/background.jpeg)`}}>
+        </div>
+        <div>
+          <h1>{' '} <code>{title}</code></h1>
+          <div dangerouslySetInnerHTML={{ __html: postParsed }} />
+        </div>
       </main>
     </>
   )

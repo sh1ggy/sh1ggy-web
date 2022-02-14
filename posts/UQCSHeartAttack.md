@@ -1,6 +1,6 @@
 <!--
-title: UCQS Hackathon - H34RT 4TT4CK
-description: Third hackathon focussed on web development (Firebase and ReactJS) 
+title: UCQS 2020 Hackathon - H34RT 4TT4CK
+description: Third hackathon focussed on web development
 tags: ReactJS, Material UI, Firebase 
 date: OCT 2020
 slug: UQCSHeartAttack
@@ -10,24 +10,24 @@ slug: UQCSHeartAttack
 
 [`GitHub Repository`](https://github.com/KieranMDolan/UQCS-Hackathon-2020)
 
-[`UQCS Hackathon Presentations`](https://www.youtube.com/watch?v=g_abZ3xN0z0&t=2s)
+[`UQCS 2020 Hackathon Presentations`](https://www.youtube.com/watch?v=g_abZ3xN0z0&t=2s)
 
 ___
 
-The University of Queensland Computer Science Club held their first hackathon in 2020, lasting around **two days**. There were no limitations, with the only sort of stimulus being the prize categories so it was definitely a good event to learn new technologies and have fun with it. 
+The University of Queensland Computer Science Club held their first hackathon in 2020, lasting around **two days**. There were no limitations, with the only sort of stimulus being the prize categories so it was definitely a good event to learn new technologies and have fun with it. Our team, Two_Knights_Stand consisted of very proficient programmers who I met through unversity classes but I had not known them for a long time so the dynamics were formed there at the hackathon. 
 
 This hackathon humbled me in more ways than one. Despite my experience with ReactJS, the pressures of this hackathon in particular definitely affected my ability to program effectively. I didn't have a strong level of familiarity with the people in my team either so there was a level of isolation contributing to my stress as well. In the end I only ended up contributing around 25% to the hackathon, mostly on planning and website & UI design.
 
-![Initial Design](/blog/uqcsha/design.png)
+![Initial Design](/blog/UQCSHeartAttack/design.png)
 
-## Skills Learnt	
+## Things Learnt	
  - **Letting Things Go**: In a hackathon I think that letting things go and making decisions quickly is essential to getting something presentable out there. The attachment to Firebase as a technology is definitely what had us pressed for time and I think that making the decision to let it go led to us actually being able to complete the project on time. 
 
  - **Time, Resource Management and Scope Creep**: Given that it was a game, it felt necessary that we should pre-plan all of the items' names, descriptions and sprites as well as how the UI should look. This definitely led to some over-planning and less time spent just actually working, in the future I think that a lot of the asset gathering should be done in the first few hours after deciding an idea to work on. 
 
  - **Motivations & Vision**: During the presentation it was hard to showcase this project's vision and the reason why we made this. Ultimately the game wasn't something we would actually play ourselves and I think that was the major reason as to why this hackathon wasn't all too successful. 
 
-![H34RT 4TT4CK UI](/blog/uqcsha/game.png)
+![H34RT 4TT4CK UI](/blog/UQCSHeartAttack/game.png)
 
 ## Timeline
 
@@ -44,7 +44,7 @@ Firebase ended up causing our team a lot of issues because authentication was ta
 ### Day Three
 This is where it all kind of came together and we were able to create some semblance of a game. Stress levels definitely reached their peak here as we were just pressed up against the wall in terms of time. I basically lost my ability to program under the massive amount of stressed but still somehow was able to make the website design look presentable. We were able to a system with items you could buy and a clicking to the beat system though it didn't work that well when put against an actual song.  
 
-[`presentation.pptx`](/blog/uqcsha/presentation.pptx)
+[`presentation.pptx`](/blog/UQCSHeartAttack/presentation.pptx)
 
 ## Conclusion
 In summary, this experience was definitely something I treasure as a part of my programming journey. I was faced directly with my weaknesses and the gaps in my knowledge and while that wasn't a good experience at the time, definitely led to a greater motivation to fill those gaps and improve as a programmer. Doing more rather than planning and designing is what I aimed to do in the future. 

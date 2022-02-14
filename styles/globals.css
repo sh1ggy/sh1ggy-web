@@ -29,7 +29,7 @@ h1 {
   margin-bottom: 3%;
 }
 
-canvas {
+.matrixRain {
   top: 0;
   left: 0;
   position: absolute; 

@@ -59,6 +59,6 @@ export const MatrixRain = () => {
     };
     
     return ( // Return the canvas, keeping in mind the ref you created to it
-        <canvas ref={canvas}/> 
+        <canvas className='matrixRain' ref={canvas}/> 
     )
 }

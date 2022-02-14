@@ -4,7 +4,7 @@ export const NavBar = () => {
     return (
         <nav>
             <Link passHref={true} href="/">
-                <li><a>shiggy-dev</a></li>
+                <li><a>sh1ggy-dev</a></li>
             </Link>
             <ul>
                 <li>

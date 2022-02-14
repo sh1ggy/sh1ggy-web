@@ -6,9 +6,10 @@ date: NOV 2019
 slug: HackMADS
 -->
 
-`17-11-2020`
+`17-11-2019`
 
 [`GitHub Repository`](https://github.com/sh1ggy/hackathon19-TDRJKM-android)
+[`Event Page`](https://www.eventbrite.com.au/e/brisbanes-mobile-app-hackathon-tickets-72067400535#)
 
 ---
 
@@ -27,7 +28,7 @@ Low fidelity designs were quickly produced so that development could begin. The 
 
 ### Adobe XD Mock-Ups
 
-![These were the final mock-ups our team created](/blog/mads/mockups.png)
+![These were the final mock-ups our team created](/blog/HackMADS/mockups.png)
 
 The development process was very slow because of my inexperience with both Github collaboration and mobile app development using Android Studio. My main tasks were the organisation of the designed elements in Android Studio and a timer feature present within the app to clock into a shift for example. 
 

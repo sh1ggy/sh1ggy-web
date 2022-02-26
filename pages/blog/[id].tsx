@@ -6,11 +6,6 @@ import matter from 'gray-matter'
 import styles from '../../styles/Blog.module.css'
 import Link from 'next/link'
 import { GetStaticPaths, GetStaticProps } from 'next/types';
-import { ParsedUrlQuery } from 'querystring'
-
-interface IParams extends ParsedUrlQuery {
-  index: string
-}
 
 export const getStaticProps: GetStaticProps = async (context) => { // run for specific route
   const postDirectory = 'posts'

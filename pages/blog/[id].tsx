@@ -5,11 +5,24 @@ import { marked } from 'marked';
 import matter from 'gray-matter'
 import styles from '../../styles/Blog.module.css'
 import Link from 'next/link'
+import { GetStaticPaths, GetStaticProps } from 'next/types';
+import { ParsedUrlQuery } from 'querystring'
 
-export async function getStaticProps(context) { // run for specific route
+interface IParams extends ParsedUrlQuery {
+  index: string
+}
+
+export const getStaticProps: GetStaticProps = async (context) => { // run for specific route
   const postDirectory = 'posts'
   // read the specific file from the context
-  const postContent = await (await readFile(`${postDirectory}/${context.params.id}.md`)).toString();
+  const posts = await readdir(postDirectory);
+  const slugs = posts.map((post) => {
+    return path.parse(post).name; // removes the file ext from file 
+  })
+
+  const postIndex = slugs.findIndex(slug => slug.substring(1) == context.params.id) + 1
+
+  const postContent = await (await readFile(`${postDirectory}/${postIndex}${context.params.id}.md`)).toString();
   const metaContent = matter(postContent, { delimiters: ['<!--', '-->'] }); // parsing the metadata from file contents
 
   // parsing
@@ -41,18 +54,15 @@ export async function getStaticProps(context) { // run for specific route
   // parsing markdown content and metadata to props
   let postParsed = marked(metaContent.content) // markedJS parsed content
   let postMetaData = metaContent.data // gray matter metadata
-  const posts = await readdir('posts');
-  const slugs = posts.map((post) => {
-    return path.parse(post).name; // removes the file ext from file 
-  })
+
   return { props: { postParsed, postMetaData, slugs }, } // gets sent to client side as prop
 }
 
-export async function getStaticPaths() { // specifying routes based on pages
+export const getStaticPaths: GetStaticPaths = async () => { // specifying routes based on pages
   // read directory for file names and assign it to paths
   const posts = await readdir('posts');
   const paths = posts.map((post) => {
-    const parsedPost = path.parse(post).name; // removes the file ext from file
+    const parsedPost = path.parse(post).name.substring(1); // removes the file ext from file
     return { params: { id: parsedPost } }
   })
 
@@ -67,7 +77,8 @@ export async function getStaticPaths() { // specifying routes based on pages
 export default function Post({ postParsed, postMetaData, slugs }) {
   const title = postMetaData.title
 
-  const currIndex = slugs.findIndex(slug => slug == postMetaData.slug)
+  const currIndex = slugs.findIndex(slug => slug.substring(1) == postMetaData.slug);
+  
 
 
   return (
@@ -89,12 +100,12 @@ export default function Post({ postParsed, postMetaData, slugs }) {
         </div>
       <div className={styles.footerNavContainer}>
         {!(slugs[currIndex - 1] == undefined) &&
-          <Link passHref={true} href={`${slugs[currIndex - 1]}`}>
+          <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
             <a className={styles.footerNav}>Previous Post</a>
           </Link>
         }
         {!(slugs[currIndex + 1] == undefined) &&
-          <Link passHref={true} href={`${slugs[currIndex + 1]}`}>
+          <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
             <a className={styles.footerNav}>Next Post</a>
           </Link>
         }

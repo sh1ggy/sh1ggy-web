@@ -2,9 +2,11 @@
 title: GMTK 2021 Game Jam - Parity
 description: First game jam, with the theme of "Joined Together"
 tags: Godot, Asesprite
-date: 14-06-2021
-slug: VGMTKParity
+date: JUNE 2021
+slug: GMTKParity
 -->
+
+`14-06-2021`
 
 [`GitHub Repository`](https://github.com/ProPablo/parity-GMTK) \
 [`itch.io Page`](https://sh-ggy.itch.io/parity)
@@ -21,7 +23,7 @@ The game has 7 acts, all of which follow their own visual theme and change up th
 
 The idea itself was conceptualised very quickly at the start of the 48 hour time period where we developed the blackhole sucking mechanic to start and fully laid out what was necessary for the game to be funtional. I think that having done this gave the game jam direction, more so than the hackathons that we have participated in previously. 
 
-![Parity Main HUD](/blog/VGMTKParity/game.png)
+![Parity Main HUD](/blog/GMTKParity/game.png)
 
 ## Things Learnt	
  - **Preparation Skills:** Before participating in this game jam, I ran through the Godot tutorial game guide and also made a Flappy Bird clone which properly introduced me to Godot as a game engine as well as the general. The funny thing about the Flappy Bird tutorial is that it was for Unity, but drawing the dots between the Godot and Unity engine helped to focus on the game development concepts alone. Using a tutorial in this way definitely contributed to a deeper understanding of how to tackle game development.

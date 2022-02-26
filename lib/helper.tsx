@@ -11,6 +11,7 @@ export interface MetaData {
 
 export async function getMetaData(): Promise<MetaData[]> {
     const posts = await readdir('posts');
+    
     const paths = []
     // Looping through all files and nabbing the contained metadata
     for (let i = 0; i < posts.length; i++) {

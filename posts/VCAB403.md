@@ -8,7 +8,7 @@ slug: VCAB403
 
 `12-09-2021`
 
-[`Private GitHub Repository`](https://github.com/sh1ggy/cab403-cpmss)\
+[`GitHub Repository`](https://github.com/sh1ggy/cab403-cpmss)\
 [`CPMSS Demonstration`](https://www.youtube.com/watch?v=SlU0jjFIrYc)
 
 ___
@@ -35,7 +35,7 @@ Structuring the interactions between each program was one of the hardest parts o
 
 We decided to handle each car in their own thread. The difficulty in doing this was that every thread needed a way to read and write to shared memory without causing memory leaks. Debugging and researching this was probably the most time-consuming part of this assignment.
 
- - **Debugging & Patience**: All debugging was done via the error / warning messages we received as well as running our program through valgrind to see if we could pinpoint any specific places of interest. Issues were resolved through a brute force method that would try to systematically reduce and reduce the possibility of bugs until we could resolve the issue. Patience during times where there would be little to no progress and there had to be research done in order to solve the issue we were facing was key in the completion of this assignment. 
+ - **Debugging & Patience**: All debugging was done via the error / warning messages we received as well as running our program through valgrind to see if we could pinpoint any specific places of interest. Issues were resolved through a brute force method that would try to systematically reduce the possibility of bugs until we could resolve the issue. Patience during times where there would be little to no progress and there had to be research done in order to solve the issue we were facing was key in the completion of this assignment. 
 
  - **Manual Memory Management**: The thorough use of valgrind to debug the shared memory structure brought me down to the lowest level of memory manipulation that I have experienced, which gave me a greater appreciation for modern frameworks and workflows. The input / output problem-solving framework that I descibed in the [`Bingo Butler`](/blog/UQCSNBingo) article was a good way to frame a lot of the problems that we had. Double, triple checking that the input was what we thought it was as well as constantly re-thinking what we wanted to do with it contributed to our ultimate success.
 

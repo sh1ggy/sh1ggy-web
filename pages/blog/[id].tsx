@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { marked } from 'marked';
 import matter from 'gray-matter'
 import styles from '../../styles/Blog.module.css'
-import { url } from 'inspector';
+import Link from 'next/link'
 
 export async function getStaticProps(context) { // run for specific route
   const postDirectory = 'posts'
@@ -37,18 +37,22 @@ export async function getStaticProps(context) { // run for specific route
     }
   };
   marked.use({ renderer })
-  
+
   // parsing markdown content and metadata to props
   let postParsed = marked(metaContent.content) // markedJS parsed content
   let postMetaData = metaContent.data // gray matter metadata
-  return { props: { postParsed, postMetaData }, } // gets sent to client side as prop
+  const posts = await readdir('posts');
+  const slugs = posts.map((post) => {
+    return path.parse(post).name; // removes the file ext from file 
+  })
+  return { props: { postParsed, postMetaData, slugs }, } // gets sent to client side as prop
 }
 
 export async function getStaticPaths() { // specifying routes based on pages
   // read directory for file names and assign it to paths
   const posts = await readdir('posts');
   const paths = posts.map((post) => {
-    const parsedPost = path.parse(post).name; // removes the file ext
+    const parsedPost = path.parse(post).name; // removes the file ext from file
     return { params: { id: parsedPost } }
   })
 
@@ -60,9 +64,12 @@ export async function getStaticPaths() { // specifying routes based on pages
   return { paths, fallback: false }
 }
 
-export default function Post({ postParsed, postMetaData }) {
+export default function Post({ postParsed, postMetaData, slugs }) {
   const title = postMetaData.title
-  
+
+  const currIndex = slugs.findIndex(slug => slug == postMetaData.slug)
+
+
   return (
     <>
       <Head>
@@ -73,13 +80,26 @@ export default function Post({ postParsed, postMetaData }) {
       </Head>
 
       <main>
-        <div className={styles.postBackground} style={{backgroundImage: `url(/blog/${postMetaData.slug}/background.jpeg)`}}>
+        <div className={styles.postBackground} style={{ backgroundImage: `url(/blog/${postMetaData.slug}/background.jpeg)` }}>
         </div>
         <div>
           <h1>{' '} <code>{title}</code></h1>
           <div dangerouslySetInnerHTML={{ __html: postParsed }} />
+
         </div>
       </main>
+      <div className={styles.footerNavContainer}>
+        {!(slugs[currIndex - 1] == undefined) &&
+          <Link passHref={true} href={`${slugs[currIndex - 1]}`}>
+            <a className={styles.footerNav}>Previous Post</a>
+          </Link>
+        }
+        {!(slugs[currIndex + 1] == undefined) &&
+          <Link passHref={true} href={`${slugs[currIndex + 1]}`}>
+            <a className={styles.footerNav}>Next Post</a>
+          </Link>
+        }
+      </div>
     </>
   )
 

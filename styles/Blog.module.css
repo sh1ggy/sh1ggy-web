@@ -35,3 +35,20 @@
 .blogRow td:last-child { border-top-right-radius: var(--border-radius); }
 .blogRow td:last-child { border-bottom-right-radius: var(--border-radius); }
 
+.footerNavContainer {
+    display: flex;
+    margin: 0 15% 0 15%;
+    padding-top: 10px;
+    justify-content: flex-end;
+    overflow: visible;
+}
+
+.footerNav {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1a2529;
+}
+
+.footerNav:hover{
+    background-color: #2a3b42;
+}

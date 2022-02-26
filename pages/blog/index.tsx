@@ -27,7 +27,7 @@ export default function Blog({ metaData }) {
           <header><strong style={{fontSize: '30px'}}>Blog List</strong></header>
           <table className={styles.blogList}>
             <thead>
-              <tr>
+              <tr key="headers">
                 <th><strong>Date</strong></th>
                 <th><strong>Title</strong></th>
                 <th><strong>Description</strong></th>

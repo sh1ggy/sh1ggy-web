@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = async (context) => { // run for sp
     return path.parse(post).name; // removes the file ext from file 
   })
 
-  const postIndex = slugs.findIndex(slug => slug.substring(1) == context.params.id) + 1
+  const postIndex = slugs.findIndex(slug => slug.substring(1) == context.params.id)
 
   const postContent = await (await readFile(`${postDirectory}/${postIndex}${context.params.id}.md`)).toString();
   const metaContent = matter(postContent, { delimiters: ['<!--', '-->'] }); // parsing the metadata from file contents
@@ -73,8 +73,6 @@ export default function Post({ postParsed, postMetaData, slugs }) {
   const title = postMetaData.title
 
   const currIndex = slugs.findIndex(slug => slug.substring(1) == postMetaData.slug);
-  
-
 
   return (
     <>
@@ -94,14 +92,22 @@ export default function Post({ postParsed, postMetaData, slugs }) {
 
         </div>
       <div className={styles.footerNavContainer}>
-        {!(slugs[currIndex - 1] == undefined) &&
+        {!(slugs[currIndex - 1] == undefined) ?
           <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
             <a className={styles.footerNav}>Previous Post</a>
-          </Link>
+          </Link> 
+          :
+          <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
+            <a className={styles.footerNavDisabled}>Previous Post</a>
+          </Link> 
         }
-        {!(slugs[currIndex + 1] == undefined) &&
+        {!(slugs[currIndex + 1] == undefined) ?
           <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
             <a className={styles.footerNav}>Next Post</a>
+          </Link>
+          :
+          <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
+            <a className={styles.footerNavDisabled}>Next Post</a>
           </Link>
         }
       </div>

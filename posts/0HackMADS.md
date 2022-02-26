@@ -8,7 +8,7 @@ slug: HackMADS
 
 `17-11-2019`
 
-[`GitHub Repository`](https://github.com/sh1ggy/hackathon19-TDRJKM-android)
+[`GitHub Repository`](https://github.com/sh1ggy/hackathon19-TDRJKM-android) \
 [`Event Page`](https://www.eventbrite.com.au/e/brisbanes-mobile-app-hackathon-tickets-72067400535#)
 
 ---

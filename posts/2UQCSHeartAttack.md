@@ -8,8 +8,7 @@ slug: UQCSHeartAttack
 
 `11-04-2020`
 
-[`GitHub Repository`](https://github.com/KieranMDolan/UQCS-Hackathon-2020)
-
+[`GitHub Repository`](https://github.com/KieranMDolan/UQCS-Hackathon-2020) \
 [`UQCS 2020 Hackathon Presentations`](https://www.youtube.com/watch?v=g_abZ3xN0z0&t=2s)
 
 ___

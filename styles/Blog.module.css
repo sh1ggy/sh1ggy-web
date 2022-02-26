@@ -49,6 +49,15 @@
     background-color: #1a2529;
 }
 
+.footerNavDisabled {
+    padding: 15px;
+    border-radius: 5px;
+    color: #516471;
+    background-color: #1a2529;
+    pointer-events: none;
+    user-select: none;
+}
+
 .footerNav:hover{
     background-color: #2a3b42;
 }

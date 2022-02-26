@@ -9,7 +9,7 @@ export default function Home () {
         <title>sh1ggy-dev</title>
         <meta name="description" content="Tyrone Nolasco's personal NextJS powered website" />
       </Head>
-      <MatrixRain />
+      <MatrixRain/>
       <main>
         <hgroup>
           <h1>Welcome to {' '} <code>sh1ggy-web</code></h1>

@@ -37,15 +37,15 @@
 
 .footerNavContainer {
     display: flex;
-    margin: 0 15% 0 15%;
     padding-top: 10px;
     justify-content: flex-end;
     overflow: visible;
 }
 
 .footerNav {
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
+    color: #a6b5bf;
     background-color: #1a2529;
 }
 

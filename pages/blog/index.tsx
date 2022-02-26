@@ -16,8 +16,6 @@ export default function Blog({ metaData }) {
       <Head>
         <title>sh1ggy-blog</title>
         <meta name="description" content="Tyrone Nolasco's personal programming-focussed blog"/>
-        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-
       </Head>
       
       <MatrixRain />

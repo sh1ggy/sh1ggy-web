@@ -87,7 +87,6 @@ export default function Post({ postParsed, postMetaData, slugs }) {
           <div dangerouslySetInnerHTML={{ __html: postParsed }} />
 
         </div>
-      </main>
       <div className={styles.footerNavContainer}>
         {!(slugs[currIndex - 1] == undefined) &&
           <Link passHref={true} href={`${slugs[currIndex - 1]}`}>
@@ -100,6 +99,7 @@ export default function Post({ postParsed, postMetaData, slugs }) {
           </Link>
         }
       </div>
+      </main>
     </>
   )
 

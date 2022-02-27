@@ -47,6 +47,7 @@
     border-radius: 5px;
     color: #a6b5bf;
     background-color: #1a2529;
+    margin: 10px;
 }
 
 .footerNavDisabled {
@@ -56,6 +57,7 @@
     background-color: #1a2529;
     pointer-events: none;
     user-select: none;
+    margin: 10px;
 }
 
 .footerNav:hover{

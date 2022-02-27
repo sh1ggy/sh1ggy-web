@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { MatrixRain } from '../components/matrix'
 import styles from '../styles/Home.module.css'
 
-export default function Home () {
+export const Home = () => {
   return (
     <>
       <Head>
@@ -27,3 +27,5 @@ export default function Home () {
     </>
   )
 }
+
+export default Home

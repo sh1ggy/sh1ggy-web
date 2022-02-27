@@ -36,7 +36,7 @@ export default function Blog({ metaData }) {
               {metaData.map((data: MetaData) => (
                 <>
                   <Link passHref={true} href={`blog/${data.slug}`}>
-                    <tr className={styles.blogRow}>
+                    <tr key={data.slug} className={styles.blogRow}>
                       <td><i>{data.date}</i></td>
                       <td>{data.title}</td>
                       <td>{data.description}</td>

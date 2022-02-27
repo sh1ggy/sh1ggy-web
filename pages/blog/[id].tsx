@@ -69,7 +69,7 @@ export const getStaticPaths: GetStaticPaths = async () => { // specifying routes
   return { paths, fallback: false }
 }
 
-export default function Post({ postParsed, postMetaData, slugs }) {
+export const Post = ({ postParsed, postMetaData, slugs }) => {
   const title = postMetaData.title
 
   const currIndex = slugs.findIndex(slug => slug.substring(1) == postMetaData.slug);
@@ -92,6 +92,7 @@ export default function Post({ postParsed, postMetaData, slugs }) {
 
         </div>
       <div className={styles.footerNavContainer}>
+        {/* Dynamic render of enabled & non-disabled prev & next buttons */}
         {!(slugs[currIndex - 1] == undefined) ?
           <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
             <a className={styles.footerNav}>Previous Post</a>
@@ -114,5 +115,6 @@ export default function Post({ postParsed, postMetaData, slugs }) {
       </main>
     </>
   )
-
 }
+
+export default Post

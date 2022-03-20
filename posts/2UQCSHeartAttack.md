@@ -15,7 +15,10 @@ ___
 
 The University of Queensland Computer Science Club held their first hackathon in 2020, lasting around **two days**. There were no limitations, with the only sort of stimulus being the prize categories so it was definitely a good event to learn new technologies and have fun with it. Our team, Two_Knights_Stand consisted of very proficient programmers who I met through unversity classes but I had not known them for a long time so the dynamics were formed there at the hackathon. 
 
-This hackathon humbled me in more ways than one. Despite my experience with ReactJS, the pressures of this hackathon in particular definitely affected my ability to program effectively. I didn't have a strong level of familiarity with the people in my team either so there was a level of isolation contributing to my stress as well. In the end I only ended up contributing around 25% to the hackathon, mostly on planning and website & UI design.
+This hackathon humbled me in more ways than one. Despite my experience with ReactJS, the pressures of this hackathon in particular definitely affected my ability to program effectively. I didn't have a strong level of familiarity with the people in my team either so there was a level of isolation contributing to my stress as well. 
+
+
+**Role** - My role involved the planning and designing of the website and learning how to use Material UI. In the end I only ended up contributing around 25% to the hackathon with my responsibilities including planning and website design.   
 
 ![Initial Design](/blog/UQCSHeartAttack/design.png)
 

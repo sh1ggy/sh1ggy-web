@@ -18,6 +18,8 @@ We definitely wanted to create a Discord bot using DiscordJS while weaving in so
 
 The project that we landed on was a bingo Discord bot to be used primarily for speed-runners where the bot would pick out of a list of user-inputted challenges and organise a random select of them into a bingo board for the participants to tick off, sending them a URL where they can do this. The following flowchart explains the user process fully. 
 
+**Role** - During this event I ended up contributing more than the last UQCS hackathon as it was only a team of two, but as a result of my lack of confidence I only contributed around 40% as the assistant programmer. I learnt to map raw data and conditionally render it to the front end with React as well as learn the project work flow with NextJS which is currently what I'm using to create this website.
+
 ![Bingo Bot Flowchart](/blog/UQCSNBingo/flowchart.png)
 ![Bingo Bot Link Generation](/blog/UQCSNBingo/gen.png)
 

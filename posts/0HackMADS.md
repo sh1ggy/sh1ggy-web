@@ -19,6 +19,8 @@ The goal of this hackathon was to choose a start-up that our team, TDRJKM, was m
 
 I entered with a team of friends, only one of which had any programming background so there was a lot of uncertainty with the roles that everyone was going to take on. There was another person that joined our team after the fact because of vested interest in the start-up that we chose. 
 
+**Role -** During this hackathon I was able to dip my toes in project management as I had essentially brought most of the team in and so I felt as though it was my job to try and coordinate everyone's skills together and distribute tasks. Alongside trying to communicate with all my team members well I was trying to also program my section of the project however, under the pressure of the hackathon I found it hard to manage both the responsibilities of my team members and my own. 
+
 ## Skills Learned
  - **Rapid App Design & Development**: 
 	 - *Design* - Adobe XD

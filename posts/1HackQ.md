@@ -16,15 +16,15 @@ slug: HackQ
 \
 The Hack Quarantine was focussed on creating something that would help combat issues the quarantine had caused the world within a **3 week** timeframe. We decided to make a COVID Toolkit including a country statistics, hand-washing timer and FAQ section.   
 
-This second hackathon acted as more of a reaffirmation of the things that I learnt in the first hackathon as well as something to do during the quarantine period. The end product was more refined than the first hackathon as the format was much simpler since everyone in my team of three had a role to play. 
+This second hackathon acted as more of a reaffirmation of the things that I learnt in the first hackathon as well as something to do during the quarantine period. The end product was more refined than the first hackathon as the format was much simpler since everyone in my team of three had a role to play, creating each of the features we were assigned to. The app itself did not take much time to create as we delegated the tasks of each respective feature to a team member most comfortable with the feature.
 
 ## Skills Learnt	
- - **Android Studio**: The FAQ section and timer (with I gained a lot of confidence learning Android Studio as the environment was much more relaxed than in the previous hackathon. My main tasks handled layout and a timer feature.
+ - **Android Studio**: I created the FAQ section and timer with which I gained a lot of confidence in the learning process for Android Studio as the environment was much more relaxed than in the previous hackathon. 
   
- - **GitHub**: The GitHub collaboration was much more involved with us making proper commits, managing branches and resolving merge conflicts which did challenge our knowledge. 
+ - **GitHub**: The GitHub collaboration was much more involved with us making proper commits, managing branches and resolving merge conflicts which did challenge our knowledge of the versioning software. 
 
 ## Conclusion
-This experience led me to pursue mobile app development more, picking it as my minor in university. There wasn't much challenge in my role in this hackathon and so I feel as though it was more of a springboard than something to challenge me like the previous hackathon did. 
+This experience led me to pursue mobile app development more, picking it as my minor in university. There wasn't much challenge in my role in this hackathon and so I feel as though it was more of a springboard rather than something to challenge me like the previous hackathon did. 
 
 ## Application Feature Screenshots
 ![](/blog/HackQ/timer.png)

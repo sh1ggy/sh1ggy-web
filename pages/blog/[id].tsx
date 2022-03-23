@@ -89,29 +89,28 @@ export const Post = ({ postParsed, postMetaData, slugs }) => {
         <div>
           <h1>{' '} <code>{title}</code></h1>
           <div dangerouslySetInnerHTML={{ __html: postParsed }} />
-
         </div>
-      <div className={styles.footerNavContainer}>
-        {/* Dynamic render of enabled & non-disabled prev & next buttons */}
-        {!(slugs[currIndex - 1] == undefined) ?
-          <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
-            <a className={styles.footerNav}>Previous Post</a>
-          </Link> 
-          :
-          <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
-            <a className={styles.footerNavDisabled}>Previous Post</a>
-          </Link> 
-        }
-        {!(slugs[currIndex + 1] == undefined) ?
-          <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
-            <a className={styles.footerNav}>Next Post</a>
-          </Link>
-          :
-          <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
-            <a className={styles.footerNavDisabled}>Next Post</a>
-          </Link>
-        }
-      </div>
+        <div className={styles.footerNavContainer}>
+          {/* Dynamic render of enabled & non-disabled prev & next buttons */}
+          {!(slugs[currIndex - 1] == undefined) ?
+            <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
+              <a className={styles.footerNav}>Previous Post</a>
+            </Link>
+            :
+            <Link passHref={true} href={`${slugs[currIndex - 1]}`.substring(1)}>
+              <a className={styles.footerNavDisabled}>Previous Post</a>
+            </Link>
+          }
+          {!(slugs[currIndex + 1] == undefined) ?
+            <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
+              <a className={styles.footerNav}>Next Post</a>
+            </Link>
+            :
+            <Link passHref={true} href={`${slugs[currIndex + 1]}`.substring(1)}>
+              <a className={styles.footerNavDisabled}>Next Post</a>
+            </Link>
+          }
+        </div>
       </main>
     </>
   )

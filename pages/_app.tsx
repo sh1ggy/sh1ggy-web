@@ -8,15 +8,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <Html data-theme="dark"/>
+        <Html data-theme="dark" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"/>
       </Head>
-      <NavBar/>
+      <NavBar />
       <body>
         <Component {...pageProps} />
-        <Footer/>
       </body>
+      <Footer/>
     </>
   )
 }

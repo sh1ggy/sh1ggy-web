@@ -38,10 +38,10 @@ export const getStaticProps: GetStaticProps = async (context) => { // run for sp
       if (text == '') return `<img class="mkdown-image" src="${href}" title="${text}">` // using mkdown-image from override
       // images with captions
       return `
-            <figure>
-              <img class="mkdown-image" src="${href}" title="${title}">
-              <figcaption>${text}</figcaption>
-            </figure>`;
+        <figure class="wrapper">
+          <img class="mkdown-image" src="${href}" title="${title}">
+          <figcaption class="mkdown-imagetext">${text}</figcaption>
+        </figure>`;
     }
   };
   marked.use({ renderer })
@@ -80,7 +80,7 @@ export const Post = ({ postParsed, postMetaData, slugs }) => {
         <title>sh1ggy-dev blog</title>
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href='/overides.css' />
+
       </Head>
 
       <main>

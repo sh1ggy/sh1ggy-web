@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Html data-theme="dark" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css"/>
+        <link rel="stylesheet" href='/overides.css' />
       </Head>
       <NavBar />
       <body>

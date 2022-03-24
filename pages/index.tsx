@@ -1,13 +1,14 @@
 import Head from 'next/head'
-import { MatrixRain } from '../components/matrix'
-import styles from '../styles/Home.module.css'
-import GitHubCalendar from 'github-calendar'
 import { useEffect } from 'react'
+import { MatrixRain } from '../components/matrix'
+import GitHubCalendar from 'github-calendar'
+import styles from '../styles/Home.module.css'
 
 export const Home = () => {
   useEffect(() => {
     GitHubCalendar(".calendar", "sh1ggy", {responsive: true, tooltips: true});
   }, [])
+  
   return (
     <>
       <Head>

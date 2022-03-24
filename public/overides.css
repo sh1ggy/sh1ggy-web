@@ -1,10 +1,20 @@
 a code {
-    text-decoration: underline;
-    color: #1095C1 !important;   
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+  text-decoration: underline;
+  color: #1095C1 !important;   
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .mkdown-image {
-    border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+  max-height: 80vh;
+  width: auto;
+  object-fit: contain;
 }

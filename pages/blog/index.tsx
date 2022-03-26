@@ -6,6 +6,7 @@ import styles from '../../styles/Blog.module.css'
 
 export async function getStaticProps() { // specifying routes based on pages
   const metaData = await getMetaData();
+  metaData.reverse();
 
   return { props: {metaData}, }
 }
@@ -21,6 +22,7 @@ export default function Blog({ metaData }) {
       <MatrixRain />
       <main>
         <h1><code>sh1ggy-web blog</code></h1>
+        <p>This blog is focussed on my personal programming journey and the things I've learnt along the way!</p>
         <article>
           <header><strong style={{fontSize: '30px'}}>Blog List</strong></header>
           <table className={styles.blogList}>

@@ -3,7 +3,7 @@ title: UCQS 2021 Hackathon - Bingo Butler
 description: Fourth hackathon and learning new technologies 
 tags: NextJS, TypeScript, DiscordJS
 date: SEPT 2021
-slug: UQCSNBingo
+slug: UQCSBingo
 -->
 
 `12-09-2021`
@@ -20,16 +20,16 @@ The project that we landed on was a bingo Discord bot to be used primarily for s
 
 **Role** - During this event I ended up contributing more than the last UQCS hackathon as it was only a team of two, but as a result of my lack of confidence I only contributed around 40% as the assistant programmer. I learnt to map raw data and conditionally render it to the front end with React as well as learn the project work flow with NextJS which is currently what I'm using to create this website.
 
-![Bingo Bot Flowchart](/blog/UQCSNBingo/flowchart.png)
-![Bingo Bot Link Generation](/blog/UQCSNBingo/gen.png)
+![Bingo Bot Flowchart](/blog/UQCSBingo/flowchart.png)
+![Bingo Bot Link Generation](/blog/UQCSBingo/gen.png)
 
 ## Things Learnt	
  - **The Importance of Preparation**: Compared to the GMTK 2021 Game Jam, I came to this hackathon a bit underprepared and I think that was my downfall. Although I did go through the ReactJS bingo example, at this point I still wasn't as comfortable as I wanted to be with ReactJS and so there was a lot of time spent fumbling around and relying on my more proficient team member for advice and direction. In the future I would like to be self-sufficient enough to just program as I see fit.
  
  - **Input & Output**: One of the most common problems that needs to be solved in programming is the transformation of raw input to a processed and presentable output. In this case our input was the list of challenges typed out in the Discord text chat and our output was a bingo board. I was responsible for this transformation of mapping the data out and styling it like a proper interactable bingo board. 
  
- <!-- ![](/blog/uqcsnb/input.png) -->
- ![](/blog/UQCSNBingo/ui.png)
+ <!-- ![](/blog/UQCSBingo/input.png) -->
+ ![](/blog/UQCSBingo/ui.png)
 
  - **Forcing Yourself**: During this hackathon, I put an immense amount of pressure on myself to perform despite my lack of knowledge with both frameworks. This is also the same problem I had in the previous UQCS hackathon, though I did better at dealing with the stress this time around. The lesson learnt here is definitely just to have fun at these events, learn new things and don't take it too seriously.
 

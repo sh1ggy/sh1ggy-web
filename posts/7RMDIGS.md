@@ -69,7 +69,9 @@ By the end of the semester the tasks we were doing were very time consuming beca
 
 Here is a demonstration video and report summarising what we had done and how the system worked at this stage. We did aim to get the system functional in the next semester but at this stage it was hard to see us succeeding. 
 
-[`Demonstration Video.mp4`](/blog/RMDIGS/sem1demo.mp4)
+<h6 align="center"><code>Demonstration Video.mp4</code></h6> 
+<video src='/blog/RMDIGS/sem1demo.mp4' width=100% controls></video>
+
 
 This is the report describing our experiences in much more detail as well as a diagram visualising the state of our system at this point.
 
@@ -114,7 +116,8 @@ This is semester 2's report describing our experiences in much more detail, brea
 
 There's also an accompanying video to demonstrate the how our two codebases were able to work with each other. 
 
-[`Semester 2 Video Demonstration.mp4`](/blog/RMDIGS/sem2demo.mp4)
+<h6 align="center"><code>Semester 2 Demonstration Video.mp4</code></h6> 
+<video src='/blog/RMDIGS/sem2demo.mp4' width=100% controls></video>
 
 ## Post University
 Although the pace has dropped dramatically at this point, there are still moments of work and communication to this day. The final major feature added to the system was a map that can be used to visually adjust the location and size of zones which is reflected on the mobile app highlighting to the user which zone they are in and which zone they should go to next on the map. The finishing touches are mainly design or user experience-related that rely on more testing to determine if there need to be changes or not. 

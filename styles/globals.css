@@ -59,6 +59,10 @@ small a:hover {
 box-sizing: border-box;
 }
 
+video {
+  border-radius: var(--border-radius);
+}
+
 /* Custom Scrollbar */
 
 ::-webkit-scrollbar {
@@ -113,7 +117,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar {
   font-family: Helvetica, arial;
-  border-radius: 5px;
+  border-radius: var(--border-radius);;
   min-height: 243px;
   text-align: center;
   margin: 0 auto;

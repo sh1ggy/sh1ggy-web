@@ -8,13 +8,14 @@ a code {
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .mkdown-image {
   border-radius: var(--border-radius);
   max-height: 80vh;
-  width: auto;
+  background-color: red;
+  width: min-content;
   object-fit: contain;
 }

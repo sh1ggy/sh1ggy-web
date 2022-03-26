@@ -20,8 +20,8 @@ The project that we landed on was a bingo Discord bot to be used primarily for s
 
 **Role** - During this event I ended up contributing more than the last UQCS hackathon as it was only a team of two, but as a result of my lack of confidence I only contributed around 40% as the assistant programmer. I learnt to map raw data and conditionally render it to the front end with React as well as learn the project work flow with NextJS which is currently what I'm using to create this website.
 
-![Bingo Bot Flowchart](/blog/UQCSBingo/flowchart.png)
-![Bingo Bot Link Generation](/blog/UQCSBingo/gen.png)
+![Bingo Bot Flowchart](/blog/UQCSBingo/flowchart.png "flowchart")
+![Bingo Bot Link Generation](/blog/UQCSBingo/gen.png "link generation")
 
 ## Things Learnt	
  - **The Importance of Preparation**: Compared to the GMTK 2021 Game Jam, I came to this hackathon a bit underprepared and I think that was my downfall. Although I did go through the ReactJS bingo example, at this point I still wasn't as comfortable as I wanted to be with ReactJS and so there was a lot of time spent fumbling around and relying on my more proficient team member for advice and direction. In the future I would like to be self-sufficient enough to just program as I see fit.

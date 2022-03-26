@@ -23,11 +23,11 @@ The game has 7 acts, all of which follow their own visual theme and change up th
 
 **Role** - I handled all of the asset gathering and mapping them into the game (collisions and region mapping). Since there were only two people in the team this time around there was overlap in our roles and it there was a lot of handing tasks back and forth between each other. There was a lot more doing than planning and it was through quickly drawing out our ideas during discussions that made it a lot easier to conceptualise what needed to be done as well as keeping us on the page.   
 
-![Parity Main HUD](/blog/GMTKParity/game.png)
+![Parity Main HUD](/blog/GMTKParity/game.png "game")
 
 The idea itself was conceptualised very quickly at the start of the 48 hour time period where we developed the blackhole sucking mechanic to start and fully laid out what was necessary for the game to be funtional. I think that having done this gave the game jam direction, more so than the hackathons that we have participated in previously. 
 
-![Parity Sketch HUD](/blog/GMTKParity/sketch.png)
+![Parity Sketch HUD](/blog/GMTKParity/sketch.png "sketch")
 
 ## Things Learnt	
  - **Preparation Skills:** Before participating in this game jam, I ran through the Godot tutorial game guide and also made a Flappy Bird clone which properly introduced me to Godot as a game engine as well as the general. The funny thing about the Flappy Bird tutorial is that it was for Unity, but drawing the dots between the Godot and Unity engine helped to focus on the game development concepts alone. Using a tutorial in this way definitely contributed to a deeper understanding of how to tackle game development.

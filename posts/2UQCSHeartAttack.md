@@ -20,7 +20,7 @@ This hackathon humbled me in more ways than one. Despite my experience with Reac
 
 **Role** - My role involved the planning and designing of the website and learning how to use Material UI. In the end I only ended up contributing around 25% to the hackathon with my responsibilities including planning and website design.   
 
-![Initial Design](/blog/UQCSHeartAttack/design.png)
+![Initial Design](/blog/UQCSHeartAttack/design.png "design")
 
 ## Things Learnt	
  - **Letting Things Go**: In a hackathon I think that letting things go and making decisions quickly is essential to getting something presentable out there. The attachment to Firebase as a technology is definitely what had us pressed for time and I think that making the decision to let it go led to us actually being able to complete the project on time. 
@@ -29,7 +29,7 @@ This hackathon humbled me in more ways than one. Despite my experience with Reac
 
  - **Motivations & Vision**: During the presentation it was hard to showcase this project's vision and the reason why we made this. Ultimately the game wasn't something we would actually play ourselves and I think that was the major reason as to why this hackathon wasn't all too successful. 
 
-![H34RT 4TT4CK UI](/blog/UQCSHeartAttack/game.png)
+![H34RT 4TT4CK UI](/blog/UQCSHeartAttack/game.png "game")
 
 ## Timeline
 

@@ -30,7 +30,7 @@ Low fidelity designs were quickly produced so that development could begin. The 
 
 ### Adobe XD Mock-Ups
 
-![These were the final mock-ups our team created](/blog/HackMADS/mockups.png)
+![These were the final mock-ups our team created](/blog/HackMADS/mockups.png "mockups")
 
 The development process was very slow because of my inexperience with both Github collaboration and mobile app development using Android Studio. My main tasks were the organisation of the designed elements in Android Studio and a timer feature present within the app to clock into a shift for example. 
 

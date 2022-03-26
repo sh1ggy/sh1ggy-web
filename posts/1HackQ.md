@@ -27,6 +27,6 @@ This second hackathon acted as more of a reaffirmation of the things that I lear
 This experience led me to pursue mobile app development more, picking it as my minor in university. There wasn't much challenge in my role in this hackathon and so I feel as though it was more of a springboard rather than something to challenge me like the previous hackathon did. 
 
 ## Application Feature Screenshots
-![](/blog/HackQ/timer.png)
-![](/blog/HackQ/faq.png)
-![](/blog/HackQ/api.png)
+![](/blog/HackQ/timer.png "timer")
+![](/blog/HackQ/faq.png "faq")
+![](/blog/HackQ/api.png "api")

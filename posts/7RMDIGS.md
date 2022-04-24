@@ -17,7 +17,7 @@ The climax of my degree was a **Capstone Project** (IFB398 & IFB399) that involv
 
 ## Prelude
 
-The subjects had us regularly communicating with both a university tutor and client to make sure that we were hitting our deadlines and were on track for the direction of the project. The Redland Museum client was given to our team of four where we would be creating a **Display Information and Guidance System** involving both a phone app and a browser-based management portal. 
+The subjects had my team regularly communicating with both a university tutor and client to make sure that we were hitting our deadlines and were on track for the direction of the project. The Redland Museum client was given to our team of four where we would be creating a **Display Information and Guidance System** involving both a phone app and a browser-based management portal. 
 
 The project we were given had 4 years worth of work, done by 4 different teams and so a lot of the challenge came from determining what exactly our role was in the whole scheme of things. This was made even more challenging since we had no way to contact any of the other teams nor access to their previous GitHub repository, having to resort to communicating surface level technicals through the client. 
 
@@ -90,7 +90,7 @@ Despite the increase in effort and time needed to essentially create one of the 
 
 In addition to this, we were able to extend the functionality of the old portal and expand upon the relationships between data now that we were able to look at the project from end-to-end. For example, the zone containing beacons and artefacts as its children was not really fleshed out in the original web portal, but now it has been made much more apparent that a zone **contains** beacons and artefacts. Organising the zones in a tour sequence was also new considering that the previous teams had not gotten to this point in the system yet where navigation needed to be implemented.
 
-![Relational Zone](/blog/RMDIGS/zonerel.png)
+![Relational Zone](/blog/RMDIGS/zonerel.png "zonerel")
 
 The final push had us trying to frantically implement the beacon-based navigation system which all came together in the end and had us with a product that we could consider complete (at least in the eyes of the university)
 
@@ -108,7 +108,7 @@ The final push had us trying to frantically implement the beacon-based navigatio
 
 By the end of the semester we had a whole end-to-end flowchart that our system was able to run through and in general were in a much better state to consider this project functional. 
 
-![Flowchart](/blog/RMDIGS/flowchart.png)
+![Flowchart](/blog/RMDIGS/flowchart.png "flowchart")
 
 This is semester 2's report describing our experiences in much more detail, breaking down the sprints as well as detailing major snippets of code that were essential to our system.
 

@@ -24,7 +24,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 	npm run build 
 	```
 
-### Libraries
+## Libraries
 - [PicoCSS](https://github.com/picocss/pico), a minimal and classless CSS framework
 
 - [GitHub Calendar](https://github.com/Bloggify/github-calendar), a library to display my GitHub activity as a web component. 

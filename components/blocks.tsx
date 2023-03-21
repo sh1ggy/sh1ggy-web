@@ -12,11 +12,11 @@ export const NavBar = () => {
             <a>Blog</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link passHref={true} href="../tools">
             <a>Tools</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   )
